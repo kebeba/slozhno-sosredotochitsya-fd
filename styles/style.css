@@ -2,4 +2,147 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  background-color: var(--background-color);
+}
+
+.header {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr min-content 1fr;
+  block-size: calc(100vh - 20px);
+  font-family: 'IBM Plex mono', sans-serif;
+  font-weight: bold;
+  align-items: center;
+}
+
+.decorated-zone {
+  position: relative;
+}
+
+.decorated-zone::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  block-size: 25px;
+  inline-size: 25px;
+  border-inline-end: 1px solid var(--decorations-color);
+  border-block-start: 1px solid var(--decorations-color);
+}
+
+.decorated-zone::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  block-size: 25px;
+  inline-size: 25px;
+  border-inline-start: 1px solid var(--decorations-color);
+  border-block-end: 1px solid var(--decorations-color);
+}
+
+.header__rec-bulb {
+  position: absolute;
+  color: var(--decorations-color);
+  top: 0;
+  right: 0;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.header__rec-bulb::after {
+  content: '';
+  width: 9px;
+  height: 9px;
+  display: inline-block;
+  background-color: var(--decorations-color);
+  margin: 0 10px 2px;
+  border-radius: 50%;
+  box-shadow: 0 0 4px 2px var(--decorations-color);
+}
+
+.header__theme-menu {
+  justify-self: end;
+}
+
+.header__theme-menu-list {
+  inline-size: min-content;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.header__theme-menu-button {
+  appearance: none;
+  padding: 0 12px 4px;
+  background-color: var(--button-background-color);
+  border: none;
+  font-family: 'IBM Plex mono', sans-serif;
+  text-transform: lowercase;
+  font-size: 18px;
+  color: var(--button-text-color);
+  border: 1px solid transparent;
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  outline: none;
+  border-bottom: 1px solid var(--button-text-color);
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid var(--button-hover-color);
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--decorations-color);
+  pointer-events: none;
+}
+
+.header__title {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  color: var(--title-color);
+  line-height: 82.5%;
+  text-shadow: 4px 4px var(--title-shadow-color);
+}
+
+.header__description {
+  font-size: 18px;
+  line-height: 130%;
+  color: var(--accent-text-color);
+  background-color: var(--accent-background-color);
+  justify-self: end;
+  inline-size: clamp(355px, 50%, 491px);
+}
+
+@media (width >= 768px) {
+  .header {
+    margin: 20px;
+    block-size: calc(100vh - 40px);
+  }
+
+  .header__title {
+    margin-left: -20px;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+}
+
+@media (width >= 1024px) {
+  .header__theme-menu {
+    justify-self: center;
+    align-self: start;
+  }
+
+  .header__theme-menu-list {
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  .header__theme-menu-button {
+    padding: 0 12px 0;
+  }
 }
