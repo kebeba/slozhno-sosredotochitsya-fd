@@ -29,6 +29,8 @@
   --link-color-shadow: #FF8DCB;
   --link-color-focus: #353430;
   --link-color-hover: #353430;
+
+  --background-image: url("../images/cover-image-light.png");
 }
 
 .theme-light .header__rec-bulb {
@@ -57,6 +59,8 @@
     --link-color-shadow: #FF8DCB;
     --link-color-focus: #353430;
     --link-color-hover: #353430;
+
+    --background-image: url("../images/cover-image-light.png");
   }
 
   .header__rec-bulb {

@@ -29,6 +29,8 @@
   --link-color-shadow: #FF0070;
   --link-color-focus: #F1B2CE;
   --link-color-hover: #F1B2CE;
+
+  --background-image: url("../images/cover-image-dark.png");
 }
 
 .theme-dark .header__rec-bulb {
