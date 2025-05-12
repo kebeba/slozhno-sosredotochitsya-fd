@@ -10,14 +10,25 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --background-color: #F5F5F5;
-  --title-color: #FFC2E6;
-  --title-shadow-color: #FF8DCB;
-  --accent-text-color: #353430;
-  --accent-background-color: #FF8DCB;
-  --button-text-color: #353430;
-  --button-background-color: transparent;
-  --button-hover-color: #353430;
+  --background-color-accent: #FF8DCB;
+
   --decorations-color: #353430;
+  
+  --page-title-color: #FFC2E6;
+  --page-title-color-shadow: #FF8DCB;
+  --text-color: #353430;
+  --text-color-accent: #353430;
+  --text-color-headline: #353430;
+  
+  --button-color-text: #353430;
+  --button-color-focus: #353430;
+  --button-color-hover: rgba(50, 49, 45, 0.4);
+  --button-color-active: #353430;
+
+  --link-color-text: #353430;
+  --link-color-shadow: #FF8DCB;
+  --link-color-focus: #353430;
+  --link-color-hover: #353430;
 }
 
 .theme-light .header__rec-bulb {
@@ -27,14 +38,25 @@
 @media (prefers-color-scheme: light) {
   :root {
     --background-color: #F5F5F5;
-    --title-color: #FFC2E6;
-    --title-shadow-color: #FF8DCB;
-    --accent-text-color: #353430;
-    --accent-background-color: #FF8DCB;
-    --button-text-color: #353430;
-    --button-background-color: transparent;
-    --button-hover-color: #353430;
+    --background-color-accent: #FF8DCB;
+  
     --decorations-color: #353430;
+    
+    --page-title-color: #FFC2E6;
+    --page-title-color-shadow: #FF8DCB;
+    --text-color: #353430;
+    --text-color-accent: #353430;
+    --text-color-headline: #353430;
+    
+    --button-color-text: #353430;
+    --button-color-focus: #353430;
+    --button-color-hover: rgba(50, 49, 45, 0.4);
+    --button-color-active: #353430;
+  
+    --link-color-text: #353430;
+    --link-color-shadow: #FF8DCB;
+    --link-color-focus: #353430;
+    --link-color-hover: #353430;
   }
 
   .header__rec-bulb {

@@ -4,12 +4,35 @@
 */
 :root {
   --background-color: #000028;
-  --title-color: #DB00FF;
-  --title-shadow-color: #FF0070;
-  --accent-text-color: #000028;
-  --accent-background-color: #FF0070;
-  --button-text-color: #FF0070;
-  --button-background-color: transparent;
-  --button-hover-color: rgba(255, 0, 112, 0.4);
+  --background-color-accent: #FF0070;
+
   --decorations-color: #FF0070;
+  
+  --page-title-color: #DB00FF;
+  --page-title-color-shadow: #FF0070;
+  --text-color: #F1B2CE;
+  --text-color-accent: #000028;
+  --text-color-headline: #FF0070;
+  
+  --button-color-text: #FF0070;
+  --button-color-focus: #FF0070;
+  --button-color-hover: rgba(255, 0, 112, 0.4);
+  --button-color-active: #FF0070;
+
+  --link-color-text: #F1B2CE;
+  --link-color-shadow: #FF0070;
+  --link-color-focus: #F1B2CE;
+  --link-color-hover: #F1B2CE;
+
+  --page-title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+
+  --page-inline-offset: 10px;
+  --page-block-offset: 10px;
+
+  --theme-menu-gap: 6px;
+  --page-contents-gap: 40px;
+  --page-sections-gap: 50px;
+  --gallery-gap: 10px;
+
+  --button-padding: 0 12px 4px;
 }
